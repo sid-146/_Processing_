@@ -7,6 +7,10 @@ application.linux64
 application.windows32
 application.windows64
 application.macosx
+
+This files are ingnored because this are not contributing main code
+these are env files to easily operate in vscode
+
 ProcessingWorking.pde
 out/ProcessingWorking.class
 .vscode/tasks.json
