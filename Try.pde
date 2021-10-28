@@ -4,4 +4,5 @@ void setup() {
 
 void draw() {
     background(255, 0.4);
+    float[] Try = new float[100];
 }
