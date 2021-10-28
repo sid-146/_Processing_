@@ -3,6 +3,6 @@ void setup() {
 }
 
 void draw() {
-    background(255, 0.4);
+    background(140, 0.4);
     float[] Try = new float[100];
 }
