@@ -4,7 +4,7 @@ float Speed;
 
 void setup()
 {
-  size(800,500);
+  size(1000,600);
   
   for(int i =0; i < Stars.length;i++)
   {

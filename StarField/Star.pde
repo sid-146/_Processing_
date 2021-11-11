@@ -10,11 +10,12 @@ class Star{
     x = random(-width/2, width/2);
     y = random(-height/2,height/2);
     z = random(width/2);
+    pz = z;
   }
   
    void update()
    {
-     z -= 1;
+     z -=3;
      if(z<1)  
      {
        z = width/2;
@@ -36,7 +37,16 @@ class Star{
      float dx = map(x/z, 0 , 1 , 0 , width);
      float dy = map(y/z, 0 , 1, 0 , height);
      
+     float px = map(x/pz, 0 ,1 , 0 , width);
+     float py = map(y/pz, 0, 1 ,0 , height);
      
+     pz = z;
+     
+    
      ellipse(dx, dy, 5, 5);
+     
+     stroke(255);
+     
+     line(px, py, dx,dy);
    }
 } 
