@@ -1,22 +1,30 @@
-Star[] Stars = new Star[100];
+Star[] Stars = new Star[500];
 
+float Speed;
 
-void setup() {
-    size(800, 600);
-    
-    for (int i = 0; i < Stars.lenght; i++)
-    {
-        Stars[i] = new Star();
-    }
+void setup()
+{
+  size(800,500);
+  
+  for(int i =0; i < Stars.length;i++)
+  {
+    Stars[i] = new Star();
+  }
+  
 }
 
-void draw() {
-    
-    background(0, 0, 0, 0);
-    
-    for (int i = 0; i < stars.lenght;i++)
-    {
-        stars[i].update();
-        start[i].show();
-    }
+void draw()
+{
+  
+  Speed = map(mouseX, 0, width, 0, 50 );
+  
+  background(0);
+  
+  translate(width/2, height/2);
+  
+  for(int i =0;i< Stars.length;i++)
+  {
+    Stars[i].update();
+    Stars[i].show();
+  }
 }
