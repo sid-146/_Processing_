@@ -8,7 +8,7 @@ void setup()
     
     for (int i = 0; i < Stars.length;i++)
         {
-        Stars[i] = new Star();
+          Stars[i] = new Star();
     }
     
 }
