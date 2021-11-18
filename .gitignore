@@ -15,4 +15,4 @@ ProcessingWorking.pde
 out/ProcessingWorking.class
 .vscode/tasks.json
 out/source/ProcessingWorking.java
-.vscode
+# .vscode
